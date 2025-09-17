@@ -13,60 +13,60 @@
 
     <header id="site-header" class="fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ">
         <nav class=" mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="h-16 flex items-center justify-between">
+            <div class="h-16 max-[950px]:h-14 flex items-center justify-between">
                 <div class="flex items-center gap-5 h-full">
                     <a href="#" class="inline-flex items-center gap-2">
                         <img src="/assets/images/common/logo.png" alt="Tradify" class="h-6 sm:h-7 w-auto" />
                     </a>
-                    <div class="h-[30px] w-[1px] bg-white/20 max-[700px]:hidden "></div>
-                    <div class="flex items-center gap-7 max-[700px]:hidden">
-                        <a class="text-sm font-light" href="#">Categories</a>
-                        <a class="text-sm font-light" href="#">Courses</a>
-                        <a class="text-sm font-light" href="#">Mentors</a>
-                        <a class="text-sm font-light" href="#">Store & Ebooks</a>
-                        <a class="text-sm font-light" href="#">Book a demo</a>
+                    <div class="h-[30px] w-[1px] bg-white/20 max-[950px]:hidden max-[880px]:hidden "></div>
+                    <div class="flex items-center gap-7 max-[1100px]:gap-5 max-[950px]:gap-4 max-[880px]:hidden">
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Categories</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Courses</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Mentors</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Store & Ebooks</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Book a demo</a>
                     </div>
                 </div>
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-3 max-[1100px]:gap-2">
 
-                    <a href="" class="flex items-center max-[700px]:hidden">
-                        <h6 class="text-sm font-light">USD</h6>
+                    <a href="" class="flex items-center max-[880px]:hidden">
+                        <h6 class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light">USD</h6>
                         <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
                     </a>
 
-                    <div class="h-[30px] w-[1px] bg-white/20 max-[700px]:hidden "></div>
+                    <div class="h-[30px] w-[1px] bg-white/20 max-[880px]:hidden "></div>
 
-                    <a href="" class="flex items-center mr-4 max-[700px]:hidden">
-                        <h6 class="text-sm font-light">Eng</h6>
+                    <a href="" class="flex items-center mr-4 max-[1100px]:mr-2 max-[880px]:hidden">
+                        <h6 class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light">Eng</h6>
                         <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
                     </a>
 
                     <!-- Mobile: Cart icon visible -->
                     <a href="" class="relative inline-block">
-                        <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
-                            <img src="/assets/images/common/cart.svg" alt="Cart" class="">
+                        <div class="w-10 h-10 max-[1100px]:w-9 max-[1100px]:h-9 max-[950px]:w-8 max-[950px]:h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                            <img src="/assets/images/common/cart.svg" alt="Cart" class="w-5 h-5 max-[1100px]:w-4.5 max-[1100px]:h-4.5 max-[950px]:w-4 max-[950px]:h-4">
                         </div>
 
                         <!-- Badge -->
-                        <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full 
+                        <span class="absolute -top-1 -right-1 w-5 h-5 max-[950px]:w-4 max-[950px]:h-4 rounded-full 
                           bg-gradient-to-b from-[#DDCF1C] via-[#F99500] to-[#9E5C01] 
-                          flex items-center justify-center text-[10px] font-regular text-white">
+                          flex items-center justify-center text-[10px] max-[950px]:text-[9px] font-regular text-white">
                             1
                         </span>
                     </a>
 
                     <!-- Desktop: Auth buttons -->
                     <a href="#"
-                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20  hover:bg-white/20 backdrop-blur-sm transition max-[700px]:hidden">
+                        class="hidden sm:inline-flex text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-regular px-4 py-2 max-[1100px]:px-3 max-[1100px]:py-1.5 rounded-lg border border-white/20  hover:bg-white/20 backdrop-blur-sm transition max-[880px]:hidden">
                         Login
                     </a>
                     <a href="#"
-                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 backdrop-blur-sm transition max-[700px]:hidden">
+                        class="hidden sm:inline-flex text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-regular px-4 py-2 max-[1100px]:px-3 max-[1100px]:py-1.5 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 backdrop-blur-sm transition max-[880px]:hidden">
                         Sign up
                     </a>
                     
                     <!-- Mobile: Hamburger button (no background) -->
-                    <button id="mobile-menu-toggle" class="w-10 h-10 flex items-center justify-center max-[700px]:flex hidden" aria-label="Open menu">
+                    <button id="mobile-menu-toggle" class="w-10 h-10 flex items-center justify-center max-[880px]:flex hidden" aria-label="Open menu">
                         <img src="/assets/images/common/menu.png" alt="Menu">
                     </button>
                 </div>
