@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/src/styles/fonts.css">
 </head>
 
-<body class="h-[500vh]">
+<body class="">
 
     <header id="site-header" class="fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ">
         <nav class=" mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,11 +20,16 @@
                     </a>
                     <div class="h-[30px] w-[1px] bg-white/20 max-[950px]:hidden max-[880px]:hidden "></div>
                     <div class="flex items-center gap-7 max-[1100px]:gap-5 max-[950px]:gap-4 max-[880px]:hidden">
-                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Categories</a>
-                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Courses</a>
-                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Mentors</a>
-                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Store & Ebooks</a>
-                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Book a demo</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light"
+                            href="#">Categories</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light"
+                            href="#">Courses</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light"
+                            href="#">Mentors</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Store &
+                            Ebooks</a>
+                        <a class="text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-light" href="#">Book a
+                            demo</a>
                     </div>
                 </div>
                 <div class="flex items-center gap-3 max-[1100px]:gap-2">
@@ -43,8 +48,10 @@
 
                     <!-- Mobile: Cart icon visible -->
                     <a href="" class="relative inline-block">
-                        <div class="w-10 h-10 max-[1100px]:w-9 max-[1100px]:h-9 max-[950px]:w-8 max-[950px]:h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                            <img src="/assets/images/common/cart.svg" alt="Cart" class="w-5 h-5 max-[1100px]:w-4.5 max-[1100px]:h-4.5 max-[950px]:w-4 max-[950px]:h-4">
+                        <div
+                            class="w-10 h-10 max-[1100px]:w-9 max-[1100px]:h-9 max-[950px]:w-8 max-[950px]:h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                            <img src="/assets/images/common/cart.svg" alt="Cart"
+                                class="w-5 h-5 max-[1100px]:w-4.5 max-[1100px]:h-4.5 max-[950px]:w-4 max-[950px]:h-4">
                         </div>
 
                         <!-- Badge -->
@@ -64,9 +71,11 @@
                         class="hidden sm:inline-flex text-sm max-[1100px]:text-[13px] max-[950px]:text-[12px] font-regular px-4 py-2 max-[1100px]:px-3 max-[1100px]:py-1.5 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 backdrop-blur-sm transition max-[880px]:hidden">
                         Sign up
                     </a>
-                    
+
                     <!-- Mobile: Hamburger button (no background) -->
-                    <button id="mobile-menu-toggle" class="w-10 h-10 flex items-center justify-center max-[880px]:flex hidden" aria-label="Open menu">
+                    <button id="mobile-menu-toggle"
+                        class="w-10 h-10 flex items-center justify-center max-[880px]:flex hidden"
+                        aria-label="Open menu">
                         <img src="/assets/images/common/menu.png" alt="Menu">
                     </button>
                 </div>
@@ -75,7 +84,8 @@
     </header>
 
     <!-- Mobile Menu Overlay (auto-height, not full-screen) -->
-    <div id="mobile-menu" class="fixed top-0 left-0 right-0 bg-black text-white z-[60] hidden border-b border-white/10 transform -translate-y-full opacity-0 transition-all duration-300 ease-out">
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 right-0 bg-black text-white z-[60] hidden border-b border-white/10 transform -translate-y-full opacity-0 transition-all duration-300 ease-out">
         <div class="h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
             <a href="#" class="inline-flex items-center gap-2">
                 <img src="/assets/images/common/logo.png" alt="Tradify" class="h-6 w-auto" />
@@ -93,13 +103,16 @@
                 <li><a class="block text-base font-light py-1.5" href="#">Store & Ebooks</a></li>
                 <li><a class="block text-base font-light py-1.5" href="#">Book a demo</a></li>
             </ul>
-            
+
             <!-- Buttons -->
             <div class="mt-6 flex flex-col gap-3 mx-auto max-w-sm">
-                <a href="#" class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20 bg-white text-black">Sign up</a>
-                <a href="#" class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20">Login</a>
+                <a href="#"
+                    class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20 bg-white text-black">Sign
+                    up</a>
+                <a href="#"
+                    class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20">Login</a>
             </div>
-            
+
             <!-- Currency / Language (centered, compact) -->
             <div class="mt-6 mx-auto flex items-center justify-center gap-5">
                 <a href="#" class="inline-flex items-center gap-1 text-sm font-light">
@@ -120,16 +133,54 @@
         class="w-full min-h-[100svh] sm:min-h-screen bg-[url('/assets/images/hero/mobile-bg.png')] sm:bg-[url('/assets/images/hero/hero-bg-new.png')] bg-cover bg-top bg-no-repeat">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 text-center">
             <div>
-                <h1 class="text-white font-medium leading-tight tracking-tight text-[36px] sm:text-[44px] lg:text-[48px] xl:text-[52px]">
-                    Unlock Your Potential with<br class="hidden sm:block"> Expert-Led <span class="font-bodoni italic">Financial Education</span>
+                <h1
+                    class="text-white font-medium leading-tight tracking-tight text-[36px] sm:text-[44px] lg:text-[48px] xl:text-[52px]">
+                    Unlock Your Potential with<br class="hidden sm:block"> Expert-Led <span
+                        class="font-bodoni italic">Financial Education</span>
                 </h1>
                 <p class="mt-4 text-white/80 text-base sm:text-lg lg:text-xl max-w-2xl lg:max-w-3xl mx-auto">
-                    Tradiify connects passionate mentors with eager learners through dynamic video courses, live classes, and interactive content - making mastering finance and trading easier and more exciting than ever.
+                    Tradiify connects passionate mentors with eager learners through dynamic video courses, live
+                    classes, and interactive content - making mastering finance and trading easier and more exciting
+                    than ever.
                 </p>
                 <div class="mt-6 flex justify-center">
-                    <a href="#" class="inline-flex justify-center text-sm font-regular px-6 py-3 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 hover:text-white backdrop-blur-sm transition">
+                    <a href="#"
+                        class="inline-flex justify-center text-sm font-regular px-6 py-3 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 hover:text-white backdrop-blur-sm transition">
                         Book Demo
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- highlights section  -->
+    <section class="bg-white py-8 lg:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+                <div class="flex flex-col items-center text-center">
+                    <img src="/assets/images/highlights/1.png" alt="skill" class="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 h-auto mb-4">
+                    <h5 class="text-lg sm:text-xl lg:text-2xl font-medium mb-2">Skill Up Anytime</h5>
+                    <p class="text-sm sm:text-base text-[#3D3D3D] max-w-[250px]">From beginner to pro — all in one place</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/assets/images/highlights/2.png" alt="skill" class="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 h-auto mb-4">
+                    <h5 class="text-lg sm:text-xl lg:text-2xl font-medium mb-2">Learn from the Best</h5>
+                    <p class="text-sm sm:text-base text-[#3D3D3D] max-w-[250px]">Courses led by experts and real-world professionals</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/assets/images/highlights/3.png" alt="skill" class="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 h-auto mb-4">
+                    <h5 class="text-lg sm:text-xl lg:text-2xl font-medium mb-2">Flexible Learning</h5>
+                    <p class="text-sm sm:text-base text-[#3D3D3D] max-w-[250px]">Start, pause, and learn whenever it works for you</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/assets/images/highlights/4.png" alt="skill" class="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 h-auto mb-4">
+                    <h5 class="text-lg sm:text-xl lg:text-2xl font-medium mb-2">Get Certified</h5>
+                    <p class="text-sm sm:text-base text-[#3D3D3D] max-w-[250px]">Earn certificates to showcase your skills and growth</p>
                 </div>
             </div>
         </div>
@@ -161,7 +212,7 @@
                 if (!mobileMenu) return;
                 mobileMenu.classList.remove('hidden');
                 // Trigger animation after display change
-                requestAnimationFrame(function() {
+                requestAnimationFrame(function () {
                     mobileMenu.classList.remove('-translate-y-full', 'opacity-0');
                     mobileMenu.classList.add('translate-y-0', 'opacity-100');
                 });
@@ -171,7 +222,7 @@
                 mobileMenu.classList.remove('translate-y-0', 'opacity-100');
                 mobileMenu.classList.add('-translate-y-full', 'opacity-0');
                 // Hide after animation completes
-                setTimeout(function() {
+                setTimeout(function () {
                     mobileMenu.classList.add('hidden');
                 }, 300);
             }
