@@ -1,0 +1,15 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+  --font-sans: "General Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-bodoni: "Libre Bodoni", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+html { font-family: var(--font-sans); }
+body { font-family: inherit; }
+p { font-family: inherit; }
+h1, h2, h3, h4, h5, h6 { font-family: inherit; }
+
+.font-bodoni { font-family: var(--font-bodoni); }
+.font-sans-var { font-family: var(--font-sans); }
