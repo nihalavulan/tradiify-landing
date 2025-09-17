@@ -11,15 +11,15 @@
 
 <body class="h-[500vh]">
 
-    <header id="site-header" class="fixed top-2 left-5 right-5 z-50 text-white transition-all duration-300 rounded-xl">
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ">
         <nav class=" mx-auto px-4 sm:px-6 lg:px-8">
             <div class="h-16 flex items-center justify-between">
                 <div class="flex items-center gap-5 h-full">
                     <a href="#" class="inline-flex items-center gap-2">
                         <img src="/assets/images/common/logo.png" alt="Tradify" class="h-6 sm:h-7 w-auto" />
                     </a>
-                    <div class="h-[30px] w-[1px] bg-white/20 "></div>
-                    <div class="flex items-center gap-7">
+                    <div class="h-[30px] w-[1px] bg-white/20 max-[700px]:hidden "></div>
+                    <div class="flex items-center gap-7 max-[700px]:hidden">
                         <a class="text-sm font-light" href="#">Categories</a>
                         <a class="text-sm font-light" href="#">Courses</a>
                         <a class="text-sm font-light" href="#">Mentors</a>
@@ -29,19 +29,19 @@
                 </div>
                 <div class="flex items-center gap-3">
 
-                    <a href="" class="flex items-center">
+                    <a href="" class="flex items-center max-[700px]:hidden">
                         <h6 class="text-sm font-light">USD</h6>
                         <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
                     </a>
 
-                    <div class="h-[30px] w-[1px] bg-white/20 "></div>
+                    <div class="h-[30px] w-[1px] bg-white/20 max-[700px]:hidden "></div>
 
-                    <a href="" class="flex items-center mr-4">
+                    <a href="" class="flex items-center mr-4 max-[700px]:hidden">
                         <h6 class="text-sm font-light">Eng</h6>
                         <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
                     </a>
 
-
+                    <!-- Mobile: Cart icon visible -->
                     <a href="" class="relative inline-block">
                         <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
                             <img src="/assets/images/common/cart.svg" alt="Cart" class="">
@@ -55,18 +55,65 @@
                         </span>
                     </a>
 
+                    <!-- Desktop: Auth buttons -->
                     <a href="#"
-                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20  hover:bg-white/20 backdrop-blur-sm transition">
+                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20  hover:bg-white/20 backdrop-blur-sm transition max-[700px]:hidden">
                         Login
                     </a>
                     <a href="#"
-                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 backdrop-blur-sm transition">
+                        class="hidden sm:inline-flex text-sm font-regular px-4 py-2 rounded-lg border border-white/20 bg-white text-black hover:bg-white/20 backdrop-blur-sm transition max-[700px]:hidden">
                         Sign up
                     </a>
+                    
+                    <!-- Mobile: Hamburger button (no background) -->
+                    <button id="mobile-menu-toggle" class="w-10 h-10 flex items-center justify-center max-[700px]:flex hidden" aria-label="Open menu">
+                        <img src="/assets/images/common/menu.png" alt="Menu">
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay (auto-height, not full-screen) -->
+    <div id="mobile-menu" class="fixed top-0 left-0 right-0 bg-black text-white z-[60] hidden border-b border-white/10 transform -translate-y-full opacity-0 transition-all duration-300 ease-out">
+        <div class="h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+            <a href="#" class="inline-flex items-center gap-2">
+                <img src="/assets/images/common/logo.png" alt="Tradify" class="h-6 w-auto" />
+            </a>
+            <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center" aria-label="Close menu">
+                <img src="/assets/images/common/close.png" alt="Close">
+            </button>
+        </div>
+        <div class="px-4 sm:px-6 lg:px-8 pb-6">
+            <!-- Nav list -->
+            <ul class="space-y-2 mt-2">
+                <li><a class="block text-base font-light py-1.5" href="#">Categories</a></li>
+                <li><a class="block text-base font-light py-1.5" href="#">Courses</a></li>
+                <li><a class="block text-base font-light py-1.5" href="#">Mentors</a></li>
+                <li><a class="block text-base font-light py-1.5" href="#">Store & Ebooks</a></li>
+                <li><a class="block text-base font-light py-1.5" href="#">Book a demo</a></li>
+            </ul>
+            
+            <!-- Buttons -->
+            <div class="mt-6 flex flex-col gap-3 mx-auto max-w-sm">
+                <a href="#" class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20 bg-white text-black">Sign up</a>
+                <a href="#" class="inline-flex justify-center text-sm font-regular px-4 py-3 rounded-lg border border-white/20">Login</a>
+            </div>
+            
+            <!-- Currency / Language (centered, compact) -->
+            <div class="mt-6 mx-auto flex items-center justify-center gap-5">
+                <a href="#" class="inline-flex items-center gap-1 text-sm font-light">
+                    <span>USD</span>
+                    <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
+                </a>
+                <div class="h-4 w-px bg-white/20"></div>
+                <a href="#" class="inline-flex items-center gap-1 text-sm font-light">
+                    <span>Eng</span>
+                    <img src="/assets/images/common/Arrow.png" alt="Arrow Down">
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     <section
@@ -74,6 +121,7 @@
     </section>
     <script>
         (function () {
+            // Navbar glass on scroll
             var header = document.getElementById('site-header');
             var applied = false;
             function onScroll() {
@@ -88,6 +136,36 @@
             }
             window.addEventListener('scroll', onScroll, { passive: true });
             onScroll();
+
+            // Mobile menu toggle with animation
+            var mobileMenu = document.getElementById('mobile-menu');
+            var openBtn = document.getElementById('mobile-menu-toggle');
+            var closeBtn = document.getElementById('mobile-menu-close');
+
+            function openMenu() {
+                if (!mobileMenu) return;
+                mobileMenu.classList.remove('hidden');
+                // Trigger animation after display change
+                requestAnimationFrame(function() {
+                    mobileMenu.classList.remove('-translate-y-full', 'opacity-0');
+                    mobileMenu.classList.add('translate-y-0', 'opacity-100');
+                });
+            }
+            function closeMenu() {
+                if (!mobileMenu) return;
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100');
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0');
+                // Hide after animation completes
+                setTimeout(function() {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            }
+            if (openBtn) openBtn.addEventListener('click', openMenu);
+            if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+            // Close on escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeMenu();
+            });
         })();
     </script>
 </body>
